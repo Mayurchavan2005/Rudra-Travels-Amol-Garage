@@ -20,9 +20,23 @@ nav{
     transition:.3s;
 }
 
-nav h2{
+/* Logo */
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.logo-box h2{
     color:#FFD700;
-    font-size:34px;
+    font-size:32px;
     font-weight:800;
     letter-spacing:1px;
 }
@@ -30,10 +44,6 @@ nav h2{
 nav ul{
     display:flex;
     gap:35px;
-    list-style:none;
-}
-
-nav ul li{
     list-style:none;
 }
 
@@ -66,14 +76,20 @@ nav ul li a:hover::after{
 }
 
 /* Tablet */
+
 @media(max-width:992px){
 
     nav{
         padding:16px 40px;
     }
 
-    nav h2{
-        font-size:28px;
+    .logo{
+        width:50px;
+        height:50px;
+    }
+
+    .logo-box h2{
+        font-size:26px;
     }
 
     nav ul{
@@ -87,6 +103,7 @@ nav ul li a:hover::after{
 }
 
 /* Mobile */
+
 @media(max-width:768px){
 
     nav{
@@ -94,9 +111,17 @@ nav ul li a:hover::after{
         padding:15px 20px;
     }
 
-    nav h2{
-        font-size:24px;
+    .logo-box{
         margin-bottom:15px;
+    }
+
+    .logo{
+        width:45px;
+        height:45px;
+    }
+
+    .logo-box h2{
+        font-size:22px;
     }
 
     nav ul{
@@ -113,10 +138,16 @@ nav ul li a:hover::after{
 }
 
 /* Small Mobile */
+
 @media(max-width:480px){
 
-    nav h2{
-        font-size:22px;
+    .logo{
+        width:40px;
+        height:40px;
+    }
+
+    .logo-box h2{
+        font-size:20px;
     }
 
     nav ul{

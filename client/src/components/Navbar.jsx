@@ -3,7 +3,10 @@ import "../Navbar.css";
 function Navbar() {
   return (
     <nav>
-      <h2>Rudra Travels</h2>
+      <div className="logo-box">
+        <img src="/logo.png" alt="Rudra Travels Logo" className="logo" />
+        <h2>Rudra Travels</h2>
+      </div>
 
       <ul>
         <li><a href="#home">Home</a></li>
