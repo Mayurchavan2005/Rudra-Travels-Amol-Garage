@@ -1,17 +1,16 @@
-import "./Whatsapp.css";
-import { FaWhatsapp } from "react-icons/fa";
+import "./WhatsApp.css";
 
-function Whatsapp() {
+function WhatsApp() {
   return (
     <a
-      href="https://wa.me/919881656878?text=Hi%20Rudra%20Travels,%20I%20want%20to%20book%20a%20trip."
+      href="https://wa.me/919881656878?text=Hi%20Rudra%20Travels,%20I%20want%20to%20book%20a%20vehicle."
       className="whatsapp"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaWhatsapp />
+      💬
     </a>
   );
 }
 
-export default Whatsapp;
+export default WhatsApp;

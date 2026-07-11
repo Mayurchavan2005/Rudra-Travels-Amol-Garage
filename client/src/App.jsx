@@ -5,9 +5,10 @@ import WhyChoose from "./components/WhyChoose";
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
 import Fleet from "./components/Fleet";
+import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Whatsapp from "./components/Whatsapp";
+import WhatsApp from "./components/WhatsApp";
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
       <Services />
       <Gallery />
       <Fleet />
+      <Reviews />
       <Contact />
       <Footer />
-      <Whatsapp />
+      <WhatsApp />
     </>
   );
 }

@@ -6,35 +6,47 @@ function Fleet() {
     <section className="fleet" id="fleet" data-aos="fade-right">
 
       <div className="fleet-image">
-        <img src={bus} alt="Luxury Traveller" />
+        <img src={bus} alt="17 Seater Luxury Traveller" />
       </div>
 
       <div className="fleet-content">
-        <h2>Luxury Traveller Fleet</h2>
+
+        <span className="tagline">🚍 Premium Fleet</span>
+
+        <h2>17 Seater Luxury Traveller</h2>
 
         <p>
-          We provide premium 17-seater luxury traveller buses
-          for family tours, corporate trips, weddings and
-          outstation travel with maximum comfort.
+          Travel in comfort with our premium Luxury Traveller.
+          Perfect for family tours, corporate trips, weddings,
+          airport transfers and outstation journeys across Maharashtra.
         </p>
 
         <ul>
-          <li>✔ 17 Seater Luxury Traveller</li>
-          <li>✔ Fully Air Conditioned</li>
-          <li>✔ Pushback Seats</li>
-          <li>✔ GPS Tracking</li>
-          <li>✔ Music System</li>
-          <li>✔ Professional Drivers</li>
+          <li>✅ 17 Seater Luxury Traveller</li>
+          <li>❄ Fully Air Conditioned</li>
+          <li>💺 Pushback Comfortable Seats</li>
+          <li>📍 GPS Tracking</li>
+          <li>🎵 Premium Music System</li>
+          <li>👨‍✈️ Experienced Professional Drivers</li>
+          <li>🛡 Safe & Comfortable Journey</li>
         </ul>
 
-        <div style={{ display: "flex", gap: "15px", flexWrap: "wrap" }}>
+        <div className="fleet-buttons">
 
           <a
-            href="https://wa.me/919881656878?text=Hi%20Rudra%20Travels,%20I%20want%20to%20book%20a%2017-seater%20Luxury%20Traveller.%20Please%20share%20the%20price%20and%20availability."
+            href="https://wa.me/919881656878?text=Hi%20Rudra%20Travels,%20I%20want%20to%20book%20a%2017-Seater%20Luxury%20Traveller."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>Book Your Trip</button>
+            <button className="book-btn">
+              📲 Book on WhatsApp
+            </button>
+          </a>
+
+          <a href="tel:+919881656878">
+            <button className="call-btn">
+              📞 Call Now
+            </button>
           </a>
 
           <a
@@ -42,7 +54,9 @@ function Fleet() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>View Location</button>
+            <button className="location-btn">
+              📍 View Location
+            </button>
           </a>
 
         </div>

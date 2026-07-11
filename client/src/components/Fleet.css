@@ -22,6 +22,20 @@
     flex:1;
 }
 
+/* Premium Tag */
+
+.tagline{
+    display:inline-block;
+    background:rgba(255,215,0,.15);
+    color:#FFD700;
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:18px;
+    border:1px solid rgba(255,215,0,.35);
+    font-size:15px;
+    font-weight:600;
+}
+
 .fleet-content h2{
     color:#FFD700;
     font-size:46px;
@@ -49,20 +63,46 @@
     text-decoration:none;
 }
 
-.fleet-content button{
-    padding:16px 36px;
-    border:none;
-    border-radius:50px;
-    background:#FFD700;
-    color:#111;
-    font-size:18px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.3s;
+/* Buttons */
+
+.fleet-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:25px;
 }
 
-.fleet-content button:hover{
-    background:#ffca0a;
+.book-btn,
+.call-btn,
+.location-btn{
+    padding:16px 30px;
+    border:none;
+    border-radius:50px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.book-btn{
+    background:#FFD700;
+    color:#111;
+}
+
+.call-btn{
+    background:transparent;
+    color:#fff;
+    border:2px solid #FFD700;
+}
+
+.location-btn{
+    background:#fff;
+    color:#111;
+}
+
+.book-btn:hover,
+.call-btn:hover,
+.location-btn:hover{
     transform:translateY(-4px);
     box-shadow:0 10px 30px rgba(255,215,0,.35);
 }
@@ -82,6 +122,10 @@
 
     .fleet-content h2{
         font-size:38px;
+    }
+
+    .fleet-buttons{
+        justify-content:center;
     }
 
 }
@@ -108,15 +152,15 @@
         font-size:16px;
     }
 
-    .fleet-content div{
-        display:flex;
+    .fleet-buttons{
         flex-direction:column;
-        gap:15px;
         align-items:center;
     }
 
-    .fleet-content button{
-        width:240px;
+    .book-btn,
+    .call-btn,
+    .location-btn{
+        width:260px;
     }
 
 }
@@ -134,10 +178,12 @@
         font-size:15px;
     }
 
-    .fleet-content button{
+    .book-btn,
+    .call-btn,
+    .location-btn{
         width:100%;
-        max-width:230px;
-        font-size:16px;
+        max-width:240px;
+        font-size:15px;
     }
 
 }
